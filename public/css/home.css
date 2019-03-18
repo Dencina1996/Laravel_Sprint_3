@@ -1,0 +1,22 @@
+.header {	height: 100px;
+			width: 100%;
+			background-image: url("/svg/banner.jpg");
+			text-align: center;
+			margin: 0;
+			border-bottom: solid 2px black;
+			border-top: solid 1px black;
+			color: white;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #000;
+	}
+
+.headerMenu {	width: 100%;
+				background-color: #00495f;
+				border: solid 20px black: 
+				margin-left: 10px;
+				margin-right: 10px;
+	}
+
+.headerDirectories {	margin-left: 5px;
+						text-decoration: none;
+	}

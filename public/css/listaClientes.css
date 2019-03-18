@@ -1,0 +1,49 @@
+table {	width: 70%;
+		border: solid 2px black;
+		border-collapse: collapse;
+		margin-left: 10px;
+		float: left;
+		text-align: center;
+		font-size: 14px;
+	}
+
+tr,td {	border: 1px solid black;
+		padding: 3px;
+	}
+
+tr:nth-child(1) {	background-color: lightgrey;
+	}
+
+.formularioCliente {	left: 0;
+						top: 0;
+						width: 300px;
+						height: 300px;
+						margin: auto;
+						padding: 10px;
+						border: solid 2px black;
+						border-radius: 10px;
+						display: table;
+						background-image: url("/svg/banner.jpg");
+						background-size: cover;
+	}
+
+.formularioCliente > form {	display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+	}
+
+#nuevoUsuario {	float: right;
+				margin-right: 10px;
+				cursor: pointer;
+	}
+
+#detallesUsuario {	width: 70%;
+					border: solid 2px black;
+					margin-left: 10px;
+					margin-top: 10px;
+					float: left;
+					text-align: center;
+					font-size: 14px;
+					display: inline-block;
+					padding: 10px;
+	}

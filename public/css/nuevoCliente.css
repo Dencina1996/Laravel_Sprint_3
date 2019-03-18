@@ -1,0 +1,22 @@
+.formularioCliente {	left: 0;
+						top: 0;
+						width: 600px;
+						margin: auto;
+						padding: 10px;
+						border: solid 2px black;
+						border-radius: 3px;
+						display: table;
+						background-color: yellow;
+	}
+
+.formularioCliente > form {	display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+	}
+
+.formularioCliente > form > input {	border: solid 2px black;
+									border-radius: 3px;
+									padding: 5px;
+									margin: 2px;
+
+	}	
