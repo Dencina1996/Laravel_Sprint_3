@@ -41,6 +41,7 @@
 					<td>ID Venta</td>
 					<td>Tipo</td>
 					<td>Ruta Archivo</td>
+					<td>Acciones</td>
 				</tr>
 				@foreach ($archivos as $archivo)
 				<tr>
@@ -48,12 +49,16 @@
 					<td>{{ $archivo->ID_Cliente}}</td>
 					<td>{{ $archivo->ID_Venta}}</td>
 					<td>{{ $archivo->Tipo}}</td>
+					<td>{{ $archivo->Ruta_Archivo}}</td>
 					<td>
 						<a href="storage/{{ $archivo->Ruta_Archivo}}" target="_blank">
-							<img id="viewFile" src="svg/ojo.png" style="width: 32px; height: 32px; border: solid 2px black;">
+							<img id="viewFile" src="svg/ojo.png" style="width: 32px; height: 32px;border: solid 1px black;">
 						</a>
 						<a href="storage/{{ $archivo->Ruta_Archivo}}" download>
-							<img id="viewFile" src="svg/download.png" style="width: 32px; height: 32px; border: solid 2px black;">
+							<img id="viewFile" src="svg/download.png" style="width: 32px; height: 32px;border: solid 1px black;">
+						</a>
+						<a href="storage/{{ $archivo->Ruta_Archivo}}">
+							<img id="viewFile" src="svg/update.png" style="width: 32px; height: 32px;border: solid 1px black;">
 						</a>
 					</td>
 				</tr>

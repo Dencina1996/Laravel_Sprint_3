@@ -27,6 +27,12 @@ tr:nth-child(1) {	background-color: lightgrey;
 						background-size: cover;
 	}
 
+.formularioCliente > form > input {	float: right;
+	}	
+
+.formularioCliente > form > label {	float: left;
+	}	
+
 .formularioCliente > form {	display: table-cell;
 							text-align: center;
 							vertical-align: middle;
@@ -72,3 +78,4 @@ tr:nth-child(1) {	background-color: lightgrey;
 									margin: 2px;
 
 	}
+
