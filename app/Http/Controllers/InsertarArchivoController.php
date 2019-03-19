@@ -15,7 +15,7 @@ class InsertarArchivoController extends Controller {
    	$idCliente = $request->input('idCliente');
    	$tipo = $request->input('tipo');
    	$ruta = $request->archivo->getClientOriginalName();
-   	$request->archivo->storeAs('files', $request->archivo->getClientOriginalName());
+   	$request->archivo->storeAs('public', $request->archivo->getClientOriginalName());
    	DB::table('Archivos')->insert([
 		'ID_Archivo'=>$idArchivo,
 		'ID_Cliente'=>$idCliente,

@@ -11,6 +11,7 @@
 	</head>
 	<body>
 		@section('content')
+		
 		<a id="nuevoUsuario" class="buttonLinks" onclick="mostrarPanelUsuario()">Añadir Cliente</a>
 		<br><br><br>
 		<div class="tablaClientes">

@@ -8,6 +8,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="{{ asset('js/clientList.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('js/min.js') }}"></script>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		@section('content')
@@ -43,7 +48,14 @@
 					<td>{{ $archivo->ID_Cliente}}</td>
 					<td>{{ $archivo->ID_Venta}}</td>
 					<td>{{ $archivo->Tipo}}</td>
-					<td>{{ $archivo->Ruta_Archivo}}</td>
+					<td>
+						<a href="storage/{{ $archivo->Ruta_Archivo}}" target="_blank">
+							<img id="viewFile" src="svg/ojo.png" style="width: 32px; height: 32px; border: solid 2px black;">
+						</a>
+						<a href="storage/{{ $archivo->Ruta_Archivo}}" download>
+							<img id="viewFile" src="svg/download.png" style="width: 32px; height: 32px; border: solid 2px black;">
+						</a>
+					</td>
 				</tr>
 				@endforeach
 			</table>

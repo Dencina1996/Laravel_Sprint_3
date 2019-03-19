@@ -4,6 +4,7 @@
 	use DB;
 	use App\Http\Requests;
 	use App\Http\Controllers\Controller;
+	use Illuminate\Support\Facades\Storage;
 	
 	class DetallesVentaController extends Controller {
 		public function detalles(Request $request){
