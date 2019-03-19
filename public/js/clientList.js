@@ -96,6 +96,61 @@ function checkRow(element) {
 	$("div[id='detallesUsuario']").attr("style","visibility: visible");
 }
 
+function checkFactura() {
+	var archivo = $("input[x='factura']").val();
+	var tipo = archivo.substr(-4);
+	if (tipo==".pdf") {
+		return true;
+	}else if (tipo!=".pdf") {
+		$("p[name='error']").text("Solo puedes subir archivos .pdf");
+		return false;
+	}
+}
+
+function checkAlbaran() {
+	var archivo = $("input[x='albaran']").val();
+	var tipo = archivo.substr(-4);
+	if (tipo==".pdf") {
+		return true;
+	}else if (tipo!=".pdf") {
+		$("p[name='error']").text("Solo puedes subir archivos .pdf");
+		return false;
+	}
+}
+
+function checkPresupuesto() {
+	var archivo = $("input[x='presupuesto']").val();
+	var tipo = archivo.substr(-4);
+	if (tipo==".pdf") {
+		return true;
+	}else if (tipo!=".pdf") {
+		$("p[name='error']").text("Solo puedes subir archivos .pdf");
+		return false;
+	}
+}
+
+function checkDocX() {
+	var archivo = $("input[x='docX']").val();
+	var tipo = archivo.substr(-4);
+	if (tipo==".pdf") {
+		return true;
+	}else if (tipo!=".pdf") {
+		$("p[name='error']").text("Solo puedes subir archivos .pdf");
+		return false;
+	}
+}
+
+function checkDocY() {
+	var archivo = $("input[x='docY']").val();
+	var tipo = archivo.substr(-4);
+	if (tipo==".pdf") {
+		return true;
+	}else if (tipo!=".pdf") {
+		$("p[name='error']").text("Solo puedes subir archivos .pdf");
+		return false;
+	}
+}
+
 function isDni(dni) {
 
     var dni = $("form[action='/create']").find("input[name='dni']");

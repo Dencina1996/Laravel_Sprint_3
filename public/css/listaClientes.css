@@ -47,3 +47,28 @@ tr:nth-child(1) {	background-color: lightgrey;
 					display: inline-block;
 					padding: 10px;
 	}
+
+.FormularioArchivos {	left: 0;
+						top: 0;
+						width: 480px;
+						height: 300px;
+						margin: auto;
+						padding: 10px;
+						border: solid 2px black;
+						border-radius: 10px;
+						display: table;
+						background-image: url("/svg/banner.jpg");
+						background-size: cover;
+	}
+
+.FormularioArchivos > form {	display: table-cell;
+							text-align: center;
+							vertical-align: middle;
+	}
+
+.FormularioArchivos > form > input {	border: solid 2px black;
+									border-radius: 3px;
+									padding: 5px;
+									margin: 2px;
+
+	}
